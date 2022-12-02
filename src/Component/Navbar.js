@@ -8,7 +8,6 @@ const Navbar = () => {
       <div className=' h-14 fixed w-full z-50 bg-black border border-transparent border-b-white'>
         <div className=' w-[90%] m-auto flex justify-between'>
           <a href='/'> Header</a>
-
           <div className='flex gap-5'>
             <a href='/'>Signup</a>
             <a href='/Profile'>Profile</a>
@@ -19,4 +18,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

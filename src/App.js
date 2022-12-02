@@ -1,8 +1,8 @@
 import './App.css';
-import { Navbar } from './Component/Navbar'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Profile from './components/Profile';
 import SignUp from './Component/Signup';
+import Navbar from './Component/Navbar';
+import Profile from './Component/Profile';
 function App() {
   return (
     <div className="bg-black h-screen overflow-hidden w-screen  text-slate-200">
