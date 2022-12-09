@@ -9,7 +9,7 @@ const Registration = (props) => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [isUser, setIsUser] = useState(false);
 
-    const [localName, setLocalName] = useState(window.localStorage.getItem("name")  )
+    //const [localName, setLocalName] = useState(window.localStorage.getItem("name")  )
 
   return (
     <StateContext.Provider value={{

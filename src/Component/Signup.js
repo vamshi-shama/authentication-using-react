@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { StateContext } from './Registration'
 
 const SignUp = () => {
@@ -158,4 +158,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp
+export default SignUp;
