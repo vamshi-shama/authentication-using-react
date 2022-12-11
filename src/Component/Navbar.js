@@ -1,13 +1,17 @@
 import React from "react";
 
+
 const Navbar = () => {
   return(
-    <div className="Navbar">
-          {/* <a href="/"> Header </a>
-          <a href="/"> SignUp </a>
-          <a href="/Profile"> Profile </a> */}
-
-          <link >Header</link>
+    <div className="Navbar" style={}>
+      <div>
+        <a href="/">Header</a>
+      </div>
+      <div>
+      <a href="/"> SignUp </a>
+      <a href="/Profile"> Profile </a> 
+      </div>
+          
     </div>
   );
 }

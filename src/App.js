@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="bg-black h-screen overflow-hidden w-screen  text-slate-200">
       <Navbar />
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<SignUp />} />
           <Route path='/profile' element={<Profile />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
