@@ -1,0 +1,7 @@
+.Navbar{
+    margin: 20px;
+    display: inline;
+    flex-direction: row;
+    background-color: black;
+    
+}

@@ -8,4 +8,15 @@ const SignUp = () => {
         password: '',
         ConfirmPassword: ''
     })
+
+    return(
+       <div>
+            <div>Name</div>
+            <div>Email</div>
+            <div>Password</div>
+            <div>ConfirmPassword</div>
+       </div>
+    );
 }
+
+export default SignUp;
