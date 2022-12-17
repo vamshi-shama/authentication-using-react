@@ -9,6 +9,15 @@ const SignUp = () => {
         ConfirmPassword: ''
     })
 
+    const [error, setError] = useState({
+        name: false,
+        email: false,
+        password: false,
+        ConfirmPassword: false
+    })
+
+    const [submit, setSubmit] = useState(false)
+    const [success, setSuccess] = useState(false)
     return(
        <div>
             <div>Name</div>
