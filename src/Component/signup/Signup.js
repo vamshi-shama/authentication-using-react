@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-
+import './Signup.css';
 
 const SignUp = () => {
     const [userDetails, setUserDetails] = useState({
@@ -19,11 +19,31 @@ const SignUp = () => {
     const [submit, setSubmit] = useState(false)
     const [success, setSuccess] = useState(false)
     return(
-       <div>
-            <div>Name</div>
-            <div>Email</div>
-            <div>Password</div>
-            <div>ConfirmPassword</div>
+       <div className="main">
+            <form>
+                <label>
+                    Name:
+                    <input type="text" name="name" />
+                </label>
+            </form>
+            <form>
+                <label>
+                    Email:
+                    <input type="text" name="email" />
+                </label>
+            </form>
+            <form>
+                <label>
+                    Password:
+                    <input type="text" name="password" />
+                </label>
+            </form>
+            <form>
+                <label>
+                    Confirmpassword:
+                    <input type="text" name="confirmpassword" />
+                </label>
+            </form>
        </div>
     );
 }
