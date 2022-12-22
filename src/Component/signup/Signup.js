@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './Signup.css';
 
+
 const SignUp = () => {
     const [userDetails, setUserDetails] = useState({
         name: '',
@@ -43,6 +44,11 @@ const SignUp = () => {
                     Confirmpassword:
                     <input type="text" name="confirmpassword" />
                 </label>
+            </form>
+            <form>
+                <a href="../../Components/profile/Profile.js">
+                    <button>SignUp</button>
+                </a>
             </form>
        </div>
     );
