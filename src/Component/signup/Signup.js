@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react";
+import { useHistory } from "react-router-dom";
 import './Signup.css';
 
 
 const SignUp = () => {
+    let history = useHistory();
     const [userDetails, setUserDetails] = useState({
         name: '',
         email: '',
@@ -46,9 +48,7 @@ const SignUp = () => {
                 </label>
             </form>
             <form>
-                <a href="../../Components/profile/Profile.js">
-                    <button>SignUp</button>
-                </a>
+                <button onClick={}>SignUp</button>
             </form>
        </div>
     );
