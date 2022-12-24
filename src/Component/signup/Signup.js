@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import './Signup.css';
+import Profile from '/home/rvc/Music/github/authentication-using-react/src/Component/profile/Profile';
 
 
 const SignUp = () => {
-    let history = useHistory();
+    // let history = useHistory();
     const [userDetails, setUserDetails] = useState({
         name: '',
         email: '',
@@ -21,6 +22,10 @@ const SignUp = () => {
 
     const [submit, setSubmit] = useState(false)
     const [success, setSuccess] = useState(false)
+
+    const action = () =>{
+        <Profile />
+    }
     return(
        <div className="main">
             <form>
@@ -48,7 +53,7 @@ const SignUp = () => {
                 </label>
             </form>
             <form>
-                <button onClick={}>SignUp</button>
+                <button onClick={action}>SignUp</button>
             </form>
        </div>
     );
