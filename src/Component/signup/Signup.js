@@ -1,31 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, Component} from "react";
 // import { useHistory } from "react-router-dom";
 import './Signup.css';
 import Profile from '/home/rvc/Music/github/authentication-using-react/src/Component/profile/Profile';
 
 
-const SignUp = () => {
-    // let history = useHistory();
-    const [userDetails, setUserDetails] = useState({
-        name: '',
-        email: '',
-        password: '',
-        ConfirmPassword: ''
-    })
-
-    const [error, setError] = useState({
-        name: false,
-        email: false,
-        password: false,
-        ConfirmPassword: false
-    })
-
-    const [submit, setSubmit] = useState(false)
-    const [success, setSuccess] = useState(false)
-
-    const action = () =>{
-        <Profile />
+class SignUp extends React.Component {
+    constructor(){
+        super();
+        
     }
+
+    render(){
     return(
        <div className="main">
             <form>
@@ -57,6 +42,7 @@ const SignUp = () => {
             </form>
        </div>
     );
+}
 }
 
 export default SignUp;
